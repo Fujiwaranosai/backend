@@ -21,7 +21,7 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "mocha --config test/mocha-e2e.json --exit"
   },
   "dependencies": {
     "@nestjs/common": "^7.6.15",
@@ -78,6 +78,7 @@
     "jest": "^26.6.3",
     "lint-staged": "^11.0.0",
     "mocha": "^9.0.0",
+    "mochawesome": "^6.2.2",
     "nyc": "^15.1.0",
     "prettier": "^2.2.1",
     "sinon": "^11.1.1",
